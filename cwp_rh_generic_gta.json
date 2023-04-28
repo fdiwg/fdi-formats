@@ -1,0 +1,156 @@
+{
+  "name": "cwp_rh_generic_gta_format",
+  "urn": "urn:fdi:format:generic:gta",
+  "title": "CWP TG-RH generic GTA data exchange format",
+  "column_specs": [
+    {
+      "name": "source_authority",
+      "urn": "urn:fdi:term:source_authority",
+      "aliases": ["rfmo"],
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_tuna_rfmos.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishingfleet",
+      "urn": "urn:fdi:term:fishingfleet",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_fishingfleet.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "time",
+      "urn": "urn:fdi:term:time",
+      "required": false,
+      "rules": []
+    },
+    {
+      "name": "time_start",
+      "urn": "urn:fdi:term:time_start",
+      "required": true,
+      "rules": []
+    },
+    {
+      "name": "time_end",
+      "urn": "urn:fdi:term:time_end",
+      "required": true,
+      "rules": []
+    },
+    {
+      "name": "geographic_identifier",
+      "urn": "urn:fdi:term:geographic_identifier",
+      "required": true,
+      "rules": []
+    },
+    {
+      "name": "gear_type",
+      "urn": "urn:fdi:term:gear_type",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_isscfg_gear.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "species",
+      "urn": "urn:fdi:term:species",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_asfis_species.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "fishing_mode",
+      "urn": "urn:fdi:term:fishing_mode",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_fishing_mode.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement",
+      "urn": "urn:fdi:term:measurement",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_values": ["catch"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_type",
+      "urn": "urn:fdi:term:measurement_type",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_values": ["landings"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_value",
+      "urn": "urn:fdi:term:measurement_value",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_threshold",
+          "args": {
+            "operator": ">",
+            "threshold": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_unit",
+      "urn": "urn:fdi:term:measurement_unit",
+      "required": true,
+      "rules": [
+        {
+          "name": "vrule_codelist",
+          "args": {
+            "ref_values": ["t"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_obs",
+      "urn": "urn:fdi:term:measurement_obs",
+      "required": true,
+      "rules": []
+    }
+  ]
+}
