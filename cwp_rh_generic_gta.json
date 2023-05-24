@@ -10,7 +10,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_tuna_rfmos.csv"
           }
@@ -23,7 +23,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_fishingfleet.csv"
           }
@@ -60,7 +60,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_isscfg_gear.csv"
           }
@@ -73,7 +73,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_asfis_species.csv"
           }
@@ -86,7 +86,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/firms/gta/cl_fishing_mode.csv"
           }
@@ -99,7 +99,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_values": ["catch"]
           }
@@ -112,7 +112,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_values": ["landings"]
           }
@@ -125,7 +125,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_threshold",
+          "vrule": "threshold",
           "args": {
             "operator": ">",
             "threshold": 0
@@ -139,7 +139,7 @@
       "required": true,
       "rules": [
         {
-          "name": "vrule_codelist",
+          "vrule": "codelist",
           "args": {
             "ref_values": ["t"]
           }
