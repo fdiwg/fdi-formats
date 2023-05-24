@@ -40,13 +40,29 @@
       "name": "time_start",
       "urn": "urn:fdi:term:time_start",
       "required": true,
-      "rules": []
+      "rules": [
+		{
+		  "vrule": "cross_column",
+		  "args": {
+			  "operator": "<",
+			  "expr": "row$time_end"
+		  }
+		}
+	  ]
     },
     {
       "name": "time_end",
       "urn": "urn:fdi:term:time_end",
       "required": true,
-      "rules": []
+      "rules": [
+		{
+		  "vrule": "cross_column",
+		  "args": {
+			  "operator": ">",
+			  "expr": "row$time_start"
+		  }
+		}
+	  ]
     },
     {
       "name": "geographic_identifier",
@@ -124,13 +140,21 @@
       "urn": "urn:fdi:term:measurement_value",
       "required": true,
       "rules": [
-        {
-          "vrule": "threshold",
-          "args": {
-            "operator": ">",
-            "threshold": 0
-          }
-        }
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
       ]
     },
     {
@@ -138,12 +162,20 @@
       "urn": "urn:fdi:term:measurement_unit",
       "required": true,
       "rules": [
-        {
-          "vrule": "codelist",
-          "args": {
-            "ref_values": ["t"]
-          }
-        }
+		{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(row$measurement_value)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_values": ["t"]
+				  }
+				}
+			]
+		  }
+		}
       ]
     },
     {
