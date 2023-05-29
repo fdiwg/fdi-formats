@@ -1,0 +1,184 @@
+{
+  "name": "cwp_rh_generic_wecafc_taskII.2_format",
+  "urn": "urn:fdi:format:generic:wecafc:taskII.2",
+  "title": "CWP TG-RH generic WECAFC-FIRMS task II.2 data exchange format",
+  "column_specs": [
+      {
+      "name": "flagstate",
+      "urn": "urn:fdi:term:flagstate",
+      "aliases": ["Flagstate","Flag State","Flag"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_flagstate.csv"
+          }
+        }
+      ]
+    },
+	    {
+      "name": "time",
+      "urn": "urn:fdi:term:time",
+	  "aliases":["Time"],
+      "required": false,
+      "rules": []
+    },
+    {
+      "name": "time_start",
+      "urn": "urn:fdi:term:time_start",
+	  "aliases":["Time Start"],
+      "required": true,
+      "rules": [
+		{
+		  "vrule": "cross_column",
+		  "args": {
+			  "operator": "<",
+			  "expr": "row$time_end"
+		  }
+		}
+	  ]
+    },
+    {
+      "name": "time_end",
+      "urn": "urn:fdi:term:time_end",
+	  "aliases":["Time End"],
+      "required": true,
+      "rules": [
+		{
+		  "vrule": "cross_column",
+		  "args": {
+			  "operator": ">",
+			  "expr": "row$time_start"
+		  }
+		}
+	  ]
+    },
+	{
+      "name": "fleet_segment",
+      "urn": "urn:fdi:term:fleet_segment",
+	  "aliases":["Fleet Segment"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_fleet_segment.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "gear_type",
+      "urn": "urn:fdi:term:gear_type",
+	  "aliases":["Gear type"],
+      "required": false,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_gear_type.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "fishing_mode",
+      "urn": "urn:fdi:term:fishing_mode",
+	  "aliases":["Fishing mode"],
+      "required": false,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_fishing_mode.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "geographic_identifier",
+      "urn": "urn:fdi:term:geographic_identifier",
+	  "aliases":["Area"],
+      "required": true,
+      "rules": []
+    },
+    {
+      "name": "species",
+      "urn": "urn:fdi:term:species",
+	  "aliases":["Species"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_species.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement",
+      "urn": "urn:fdi:term:measurement",
+	  "aliases":["Measurement"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_values": ["effort"]
+          }
+        }
+      ]
+    },
+	{
+      "name": "measurement_type",
+      "urn": "urn:fdi:term:measurement_type",
+	  "aliases":["Measurement Type","Type"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_values": ["nominal","fishing_duration"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_value",
+      "urn": "urn:fdi:term:measurement_value",
+	  "aliases":["Measurement Value","Value"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "threshold",
+          "args": {
+            "operator": ">",
+            "threshold": 0
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_unit",
+      "urn": "urn:fdi:term:measurement_unit",
+	  "aliases":["Measurement Unit","Unit"],
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_values": ["t"]
+          }
+        }
+      ]
+    },
+    {
+      "name": "measurement_obs",
+      "urn": "urn:fdi:term:measurement_obs",
+      "required": false,
+      "rules": []
+    }
+  ]
+}
