@@ -21,7 +21,12 @@
       "name": "year",
       "urn": "urn:fdi:term:year",
       "required": true,
-      "rules": []
+      "rules": [
+	  {
+		"vrule": "year",
+		"args": {}
+	  }
+	  ]
     },
     {
       "name": "period",

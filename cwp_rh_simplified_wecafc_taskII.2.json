@@ -21,7 +21,12 @@
       "name": "year",
       "urn": "urn:fdi:term:year",
       "required": true,
-      "rules": []
+      "rules": [
+	  {
+		"vrule": "year",
+		"args": {}
+	  }
+	  ]
     },
     {
       "name": "period",
@@ -107,7 +112,14 @@
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
       "required": true,
-      "rules": []
+      "rules": [
+	  {
+		"vrule": "codelist",
+		"args": {
+			"ref_values": ["WCA"]
+		}
+	  }
+	  ]
     },
     {
       "name": "species",
