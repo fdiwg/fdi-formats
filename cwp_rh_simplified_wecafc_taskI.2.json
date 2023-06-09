@@ -120,7 +120,7 @@
 				{
 				  "vrule": "threshold",
 				  "args": {
-					"operator": ">",
+					"operator": ">=",
 					"threshold": 0
 				  }
 				}
