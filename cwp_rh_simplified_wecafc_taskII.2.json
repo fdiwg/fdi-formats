@@ -107,7 +107,7 @@
 	    {
 		  "vrule": "if",
 		  "args": {
-			"if_condition": "!is.na(row$effort_fishing_duration_unit)",
+			"if_condition": "!is.na(value)",
 			"then_apply": [
 				{
 				  "vrule": "threshold",
@@ -152,7 +152,7 @@
 	    {
 		  "vrule": "if",
 		  "args": {
-			"if_condition": "!is.na(row$effort_nominal_unit)",
+			"if_condition": "!is.na(value)",
 			"then_apply": [
 				{
 				  "vrule": "threshold",

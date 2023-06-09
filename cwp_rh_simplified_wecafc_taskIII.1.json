@@ -92,7 +92,7 @@
 	    {
 		  "vrule": "if",
 		  "args": {
-			"if_condition": "!is.na(row$fleet_engagement_number_unit)",
+			"if_condition": "!is.na(value)",
 			"then_apply": [
 				{
 				  "vrule": "threshold",
@@ -123,7 +123,7 @@
 	    {
 		  "vrule": "if",
 		  "args": {
-			"if_condition": "!is.na(row$fleet_engagement_capacity_unit)",
+			"if_condition": "!is.na(value)",
 			"then_apply": [
 				{
 				  "vrule": "threshold",
@@ -168,7 +168,7 @@
 	    {
 		  "vrule": "if",
 		  "args": {
-			"if_condition": "!is.na(row$fleet_engagement_engine_power_unit)",
+			"if_condition": "!is.na(value)",
 			"then_apply": [
 				{
 				  "vrule": "threshold",
