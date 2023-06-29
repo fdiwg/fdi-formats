@@ -18,8 +18,8 @@
       ]
     },
     {
-      "name": "fishingfleet",
-      "urn": "urn:fdi:term:fishingfleet",
+      "name": "fishing_fleet",
+      "urn": "urn:fdi:term:fishing_fleet",
       "required": true,
       "rules": [
         {
