@@ -1,0 +1,250 @@
+{
+  "name": "cwp_rh_simplified_recofi_catch",
+  "urn": "urn:fdi:format:simplified:recofi:catch",
+  "title": "CWP TG-RH simplified WRECOFI catch data exchange format",
+  "column_specs": [
+	{
+      "name": "flagstate",
+      "urn": "urn:fdi:term:flagstate",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_flagstate.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "geographic_identifier",
+      "urn": "urn:fdi:term:geographic_identifier",
+      "required": true,
+      "rules": [
+		{
+			"vrule": "codelist",
+			"args": {
+				"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_fishing_area.csv"
+			}
+		}
+	  ]
+    },
+	{
+      "name": "landing_site",
+      "urn": "urn:fdi:term:landing_site",
+      "required": false,
+      "rules": []
+    },
+	{
+      "name": "year",
+      "urn": "urn:fdi:term:year",
+      "required": true,
+      "rules": [
+		  {
+			"vrule": "year",
+			"args": {}
+		  }
+	  ]
+    },
+	{
+      "name": "month",
+      "urn": "urn:fdi:term:month",
+      "required": false,
+      "rules": []
+    },
+    {
+      "name": "vessel_type",
+      "urn": "urn:fdi:term:vessel_type",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_type.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "vessel_length_class",
+      "urn": "urn:fdi:term:vessel_length_class",
+      "required": false,
+      "rules":  [{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_length_class.csv"
+				  }
+				}
+			]
+		  }
+		}
+		]
+    },
+	{
+      "name": "gear_type",
+      "urn": "urn:fdi:term:gear_type",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_gear_type.csv"
+          }
+        }
+      ]
+    },
+    {
+      "name": "species",
+      "urn": "urn:fdi:term:species",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_species.csv"
+          }
+        }
+      ]
+    },
+	{
+      "name": "catch_retained",
+      "urn": "urn:fdi:term:catch_retained",
+      "required": false,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "catch_retained_unit",
+      "urn": "urn:fdi:term:catch_retained_unit",
+      "required": false,
+      "rules": [
+		{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(row$catch_retained)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_values": ["t"]
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "catch_discarded",
+      "urn": "urn:fdi:term:catch_discarded",
+      "required": false,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">=",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "catch_discarded_unit",
+      "urn": "urn:fdi:term:catch_discarded_unit",
+      "required": false,
+      "rules": [
+		{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(row$catch_discarded)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_values": ["t"]
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "bycatch_total",
+      "urn": "urn:fdi:term:bycatch_total",
+      "required": false,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">=",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+	  ]
+    },
+	{
+      "name": "bycatch_total_unit",
+      "urn": "urn:fdi:term:bycatch_total_unit",
+      "required": false,
+      "rules": [
+        {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(row$bycatch_total)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_values": ["t"]
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+    {
+      "name": "note",
+      "urn": "urn:fdi:term:note",
+      "required": false,
+      "rules": []
+    }
+  ]
+}
