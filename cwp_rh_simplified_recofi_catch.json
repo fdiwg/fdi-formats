@@ -11,7 +11,8 @@
         {
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_flagstate.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_flagstate.csv",
+			"allow_labels": true
           }
         }
       ]
@@ -24,7 +25,8 @@
 		{
 			"vrule": "codelist",
 			"args": {
-				"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_fishing_area.csv"
+				"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_fishing_area.csv",
+				"allow_labels": true
 			}
 		}
 	  ]
@@ -60,7 +62,8 @@
         {
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_type.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_type.csv",
+			"allow_labels": true
           }
         }
       ]
@@ -77,7 +80,8 @@
 				{
 				  "vrule": "codelist",
 				  "args": {
-					"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_length_class.csv"
+					"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_length_class.csv",
+					"allow_labels": true
 				  }
 				}
 			]
@@ -93,7 +97,8 @@
         {
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_gear_type.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_gear_type.csv",
+			"allow_labels": true
           }
         }
       ]
@@ -106,7 +111,8 @@
         {
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_species.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_species.csv",
+			"allow_labels": true
           }
         }
       ]
