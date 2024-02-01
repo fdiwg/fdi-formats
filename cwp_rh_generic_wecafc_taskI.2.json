@@ -82,7 +82,7 @@
       "required": true,
       "rules": [
         {
-          "vrule": "codelist",
+          "vrule": "raw_codelist",
           "args": {
             "ref_values": ["catch"]
           }
@@ -96,7 +96,7 @@
       "required": true,
       "rules": [
         {
-          "vrule": "codelist",
+          "vrule": "raw_codelist",
           "args": {
             "ref_values": ["retained", "discarded","nominal"]
           }
@@ -125,7 +125,7 @@
       "required": true,
       "rules": [
         {
-          "vrule": "codelist",
+          "vrule": "raw_codelist",
           "args": {
             "ref_values": ["t"]
           }
