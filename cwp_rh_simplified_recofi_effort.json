@@ -1,0 +1,263 @@
+{
+  "name": "cwp_rh_simplified_recofi_effort",
+  "urn": "urn:fdi:format:simplified:recofi:effort",
+  "title": "CWP TG-RH simplified WRECOFI effort data exchange format",
+  "column_specs": [
+	{
+      "name": "flagstate",
+      "urn": "urn:fdi:term:flagstate",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_flagstate.csv",
+			"allow_labels": true
+          }
+        }
+      ]
+    },
+	{
+      "name": "geographic_identifier",
+      "urn": "urn:fdi:term:geographic_identifier",
+      "required": true,
+      "rules": [
+		{
+			"vrule": "codelist",
+			"args": {
+				"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_fishing_area.csv",
+				"allow_labels": true
+			}
+		}
+	  ]
+    },
+	{
+      "name": "landing_site",
+      "urn": "urn:fdi:term:landing_site",
+      "required": false,
+      "rules": []
+    },
+	{
+      "name": "year",
+      "urn": "urn:fdi:term:year",
+      "required": true,
+      "rules": [
+		  {
+			"vrule": "year",
+			"args": {}
+		  }
+	  ]
+    },
+	{
+      "name": "month",
+      "urn": "urn:fdi:term:month",
+      "required": false,
+      "rules": []
+    },
+    {
+      "name": "vessel_type",
+      "urn": "urn:fdi:term:vessel_type",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_type.csv",
+			"allow_labels": true
+          }
+        }
+      ]
+    },
+	{
+      "name": "vessel_length_class",
+      "urn": "urn:fdi:term:vessel_length_class",
+      "required": false,
+      "rules":  [{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_length_class.csv",
+					"allow_labels": true
+				  }
+				}
+			]
+		  }
+		}
+		]
+    },
+	{
+      "name": "vessel_material",
+      "urn": "urn:fdi:term:vessel_material",
+      "required": false,
+      "rules":  [{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "codelist",
+				  "args": {
+					"ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_vessel_material.csv",
+					"allow_labels": true
+				  }
+				}
+			]
+		  }
+		}
+		]
+    },
+	{
+      "name": "fleet_engagement_number",
+      "urn": "urn:fdi:term:fleet_engagement_number",
+      "required": true,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">=",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "gear_type",
+      "urn": "urn:fdi:term:gear_type",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_gear_type.csv",
+			"allow_labels": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "species",
+      "urn": "urn:fdi:term:species",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_species.csv",
+			"allow_labels": true
+          }
+        }
+      ]
+    },
+	{
+      "name": "effort_nominal",
+      "urn": "urn:fdi:term:effort_nominal",
+      "required": false,
+      "rules":[
+		{
+		  "vrule": "threshold",
+		  "args": {
+			"operator": ">=",
+			"threshold": 0
+		  }
+		}
+	   ]
+    },
+	{
+      "name": "effort_nominal_unit",
+      "urn": "urn:fdi:term:effort_nominal_unit",
+      "required": true,
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_effortunit_recofi.csv",
+			"allow_labels": true
+          }
+        }
+      ]
+    },
+	{
+      "name": "effort_fishing_operation_number",
+      "urn": "urn:fdi:term:effort_fishing_operation_number",
+      "required": false,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">=",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "effort_fishing_duration",
+      "urn": "urn:fdi:term:effort_fishing_duration",
+      "required": false,
+      "rules": [
+	    {
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(value)",
+			"then_apply": [
+				{
+				  "vrule": "threshold",
+				  "args": {
+					"operator": ">=",
+					"threshold": 0
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    },
+	{
+      "name": "effort_fishing_duration_unit",
+      "urn": "urn:fdi:term:effort_fishing_duration_unit",
+      "required": false,
+      "rules": [
+		{
+		  "vrule": "if",
+		  "args": {
+			"if_condition": "!is.na(row$effort_fishing_duration)",
+			"then_apply": [
+				{
+				  "vrule": "raw_codelist",
+				  "args": {
+					"ref_values": ["t"]
+				  }
+				}
+			]
+		  }
+		}
+      ]
+    }
+    {
+      "name": "note",
+      "urn": "urn:fdi:term:note",
+      "required": false,
+      "rules": []
+    }
+  ]
+}
