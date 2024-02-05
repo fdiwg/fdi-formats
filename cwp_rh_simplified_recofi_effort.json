@@ -72,7 +72,8 @@
       "name": "vessel_length_class",
       "urn": "urn:fdi:term:vessel_length_class",
       "required": false,
-      "rules":  [{
+      "rules":  [
+	    {
 		  "vrule": "if",
 		  "args": {
 			"if_condition": "!is.na(value)",
@@ -87,13 +88,14 @@
 			]
 		  }
 		}
-		]
+	  ]
     },
 	{
       "name": "vessel_material",
       "urn": "urn:fdi:term:vessel_material",
       "required": false,
-      "rules":  [{
+      "rules":  [
+	    {
 		  "vrule": "if",
 		  "args": {
 			"if_condition": "!is.na(value)",
@@ -108,7 +110,7 @@
 			]
 		  }
 		}
-		]
+	  ]
     },
 	{
       "name": "fleet_engagement_number",
@@ -150,15 +152,7 @@
       "name": "species",
       "urn": "urn:fdi:term:species",
       "required": true,
-      "rules": [
-        {
-          "vrule": "codelist",
-          "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/recofi/cl_species.csv",
-			"allow_labels": true
-          }
-        }
-      ]
+      "rules": []
     },
 	{
       "name": "effort_nominal",
