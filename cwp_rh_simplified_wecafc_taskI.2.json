@@ -96,7 +96,7 @@
 			"if_condition": "!is.na(row$catch_retained)",
 			"then_apply": [
 				{
-				  "vrule": "codelist",
+				  "vrule": "raw_codelist",
 				  "args": {
 					"ref_values": ["t"]
 				  }
@@ -141,7 +141,7 @@
 			"if_condition": "!is.na(row$catch_discarded)",
 			"then_apply": [
 				{
-				  "vrule": "codelist",
+				  "vrule": "raw_codelist",
 				  "args": {
 					"ref_values": ["t"]
 				  }
@@ -173,7 +173,7 @@
       "required": true,
       "rules": [
         {
-          "vrule": "codelist",
+          "vrule": "raw_codelist",
           "args": {
             "ref_values": ["t"]
           }

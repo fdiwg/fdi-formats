@@ -70,7 +70,7 @@
       "required": true,
       "rules": [
 	  {
-		"vrule": "codelist",
+		"vrule": "raw_codelist",
 		"args": {
 			"ref_values": ["WCA"]
 		}
@@ -177,7 +177,7 @@
 			"if_condition": "!is.na(row$fleet_engagement_capacity)",
 			"then_apply": [
 				{
-				  "vrule": "codelist",
+				  "vrule": "raw_codelist",
 				  "args": {
 					"ref_values": ["GT"]
 				  }
@@ -222,7 +222,7 @@
 			"if_condition": "!is.na(row$fleet_engagement_engine_power)",
 			"then_apply": [
 				{
-				  "vrule": "codelist",
+				  "vrule": "raw_codelist",
 				  "args": {
 					"ref_values": ["kW"]
 				  }

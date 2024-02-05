@@ -114,7 +114,7 @@
       "required": true,
       "rules": [
 	  {
-		"vrule": "codelist",
+		"vrule": "raw_codelist",
 		"args": {
 			"ref_values": ["WCA"]
 		}
@@ -177,7 +177,7 @@
 			"if_condition": "!is.na(row$effort_fishing_duration)",
 			"then_apply": [
 				{
-				  "vrule": "codelist",
+				  "vrule": "raw_codelist",
 				  "args": {
 					"ref_values": ["days"]
 				  }
