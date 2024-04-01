@@ -1,7 +1,7 @@
 {
   "name": "cwp_rh_generic_gta_format",
   "urn": "urn:fdi:format:generic:gta",
-  "title": "CWP TG-RH generic GTA data exchange format",
+  "title": "CWP TG-RH generic GTA data exchange format - nominal catch",
   "column_specs": [
     {
       "name": "source_authority",
@@ -29,12 +29,6 @@
           }
         }
       ]
-    },
-    {
-      "name": "time",
-      "urn": "urn:fdi:term:time",
-      "required": false,
-      "rules": []
     },
     {
       "name": "time_start",
@@ -130,7 +124,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["landings"]
+            "ref_values": ["nominal"]
           }
         }
       ]
@@ -179,9 +173,9 @@
       ]
     },
     {
-      "name": "measurement_obs",
+      "name": "measurement_status",
       "urn": "urn:fdi:term:measurement_obs",
-      "required": true,
+      "required": false,
       "rules": []
     }
   ]
