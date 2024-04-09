@@ -1,7 +1,7 @@
 {
   "name": "cwp_rh_simplified_recofi_effort",
   "urn": "urn:fdi:format:simplified:recofi:effort",
-  "title": "CWP TG-RH simplified WRECOFI effort data exchange format",
+  "title": "CWP TG-RH simplified RECOFI effort data exchange format",
   "column_specs": [
 	{
       "name": "flagstate",
