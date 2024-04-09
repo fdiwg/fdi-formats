@@ -1,7 +1,7 @@
 {
   "name": "cwp_rh_simplified_recofi_catch",
   "urn": "urn:fdi:format:simplified:recofi:catch",
-  "title": "CWP TG-RH simplified WRECOFI catch data exchange format",
+  "title": "CWP TG-RH simplified RECOFI catch data exchange format",
   "column_specs": [
 	{
       "name": "flagstate",
