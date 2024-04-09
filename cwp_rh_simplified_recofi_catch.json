@@ -7,6 +7,7 @@
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
       "required": true,
+      "aliases": ["Flag state"],
       "rules": [
         {
           "vrule": "codelist",
