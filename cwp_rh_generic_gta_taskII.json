@@ -171,7 +171,7 @@
 				{
 				  "vrule": "raw_codelist",
 				  "args": {
-					"ref_values": ["t"]
+					"ref_values": ["t","no"]
 				  }
 				}
 			]
