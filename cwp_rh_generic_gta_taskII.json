@@ -1,7 +1,7 @@
 {
   "name": "cwp_rh_generic_gta_format",
   "urn": "urn:fdi:format:generic:gta",
-  "title": "CWP TG-RH generic GTA data exchange format - nominal catch",
+  "title": "CWP TG-RH generic GTA data exchange format - geo-referenced catch",
   "column_specs": [
     {
       "name": "source_authority",
@@ -62,7 +62,14 @@
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
       "required": true,
-      "rules": []
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_areal_grid_erased_nogeom.csv"
+          }
+        }
+      ]
     },
     {
       "name": "gear_type",
@@ -124,7 +131,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["nominal"]
+            "ref_values": ["retained"]
           }
         }
       ]
