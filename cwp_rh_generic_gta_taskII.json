@@ -66,7 +66,7 @@
         {
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_areal_grid_erased_nogeom.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_areal_grid_nogeom.csv"
           }
         }
       ]
