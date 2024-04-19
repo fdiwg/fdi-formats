@@ -1,11 +1,12 @@
 {
   "name": "cwp_rh_simplified_recofi_catch",
   "urn": "urn:fdi:format:simplified:recofi:catch",
-  "title": "CWP TG-RH simplified WRECOFI catch data exchange format",
+  "title": "CWP TG-RH simplified RECOFI catch data exchange format",
   "column_specs": [
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
+	  "aliases": ["ISO3_flagstate_code"],
       "required": true,
       "rules": [
         {
@@ -20,6 +21,7 @@
 	{
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
+	  "aliases": ["FAO_fishing_area_code"],										   
       "required": true,
       "rules": [
 		{
@@ -57,6 +59,7 @@
     {
       "name": "vessel_type",
       "urn": "urn:fdi:term:vessel_type",
+	  "aliases": ["RECOFI_fishing_vessel_type_label"],
       "required": true,
       "rules": [
         {
@@ -71,6 +74,7 @@
 	{
       "name": "vessel_length_class",
       "urn": "urn:fdi:term:vessel_length_class",
+	  "aliases": ["ISSCFV_LOA_class_meter"],
       "required": false,
       "rules":  [{
 		  "vrule": "if",
@@ -92,6 +96,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
+	  "aliases": ["ISSCFG_gear_category"],
       "required": true,
       "rules": [
         {
@@ -106,6 +111,7 @@
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
+	  "aliases": ["ASFIS_species_code"],
       "required": true,
       "rules": [
         {

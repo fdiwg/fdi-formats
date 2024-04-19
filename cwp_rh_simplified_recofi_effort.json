@@ -1,11 +1,12 @@
 {
   "name": "cwp_rh_simplified_recofi_effort",
   "urn": "urn:fdi:format:simplified:recofi:effort",
-  "title": "CWP TG-RH simplified WRECOFI effort data exchange format",
+  "title": "CWP TG-RH simplified RECOFI effort data exchange format",
   "column_specs": [
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
+	  "aliases": ["ISO3_flagstate_code"],
       "required": true,
       "rules": [
         {
@@ -20,6 +21,7 @@
 	{
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
+	  "aliases": ["FAO_fishing_area_code"],
       "required": true,
       "rules": [
 		{
@@ -57,6 +59,7 @@
     {
       "name": "vessel_type",
       "urn": "urn:fdi:term:vessel_type",
+	  "aliases": ["RECOFI_fishing_vessel_type_label"],
       "required": true,
       "rules": [
         {
@@ -71,6 +74,7 @@
 	{
       "name": "vessel_length_class",
       "urn": "urn:fdi:term:vessel_length_class",
+	  "aliases": ["ISSCFV_LOA_class_meter"],
       "required": false,
       "rules":  [
 	    {
@@ -93,6 +97,7 @@
 	{
       "name": "vessel_material",
       "urn": "urn:fdi:term:vessel_material",
+	  "aliases": ["RECOFI_vessel_material_label"],
       "required": false,
       "rules":  [
 	    {
@@ -115,6 +120,7 @@
 	{
       "name": "fleet_engagement_number",
       "urn": "urn:fdi:term:fleet_engagement_number",
+	  "aliases": ["Active_fleet","Number of active vessel engaged in the fishery"],
       "required": true,
       "rules": [
 	    {
@@ -137,6 +143,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
+	  "aliases": ["ISSCFG_gear_category"],
       "required": true,
       "rules": [
         {
@@ -151,12 +158,14 @@
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
+	  "aliases": ["Target species"],
       "required": true,
       "rules": []
     },
 	{
       "name": "effort_nominal",
       "urn": "urn:fdi:term:effort_nominal",
+	  "aliases": ["Number of days absent from base","Number_of_days_at_sea"],
       "required": false,
       "rules":[
 		{
@@ -185,6 +194,7 @@
 	{
       "name": "effort_fishing_operation_number",
       "urn": "urn:fdi:term:effort_fishing_operation_number",
+	  "aliases": ["Number of fishing operations","Number of shrimp trawling operations"],
       "required": false,
       "rules": [
 	    {
@@ -207,6 +217,7 @@
 	{
       "name": "effort_fishing_duration",
       "urn": "urn:fdi:term:effort_fishing_duration",
+	  "aliases": ["Average tow duration"],
       "required": false,
       "rules": [
 	    {
