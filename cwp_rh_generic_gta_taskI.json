@@ -83,9 +83,12 @@
       "required": true,
       "rules": [
         {
-          "vrule": "codelist",
+          "vrule": "mapping",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/global/cwp/cl_asfis_species.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-mappings/main/cross-term/codelist_mapping_source_authority_species.csv",
+			"ref_source_term": "species",
+			"ref_target_term": "source_authority",
+			"data_target_term": "source_authority"
           }
         }
       ]
