@@ -6,7 +6,6 @@
     {
       "name": "source_authority",
       "urn": "urn:fdi:term:source_authority",
-      "aliases": ["rfmo"],
       "required": true,
       "rules": [
         {
