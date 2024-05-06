@@ -134,7 +134,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["retained"]
+            "ref_values": ["RC", "D"]
           }
         }
       ]

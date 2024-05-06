@@ -6,7 +6,6 @@
     {
       "name": "source_authority",
       "urn": "urn:fdi:term:source_authority",
-      "aliases": ["rfmo"],
       "required": true,
       "rules": [
         {
@@ -127,7 +126,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["nominal"]
+            "ref_values": ["NC", "NL", "D"]
           }
         }
       ]
