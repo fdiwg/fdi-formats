@@ -6,7 +6,7 @@
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-      "aliases":["Flagstate","Flag State","Flag"],
+      "aliases":["Flagstate","Flag State","Flag", "ISO3_flagstate_code"],
       "required": true,
       "rules": [
         {
@@ -53,7 +53,7 @@
 	{
       "name": "fleet_segment",
       "urn": "urn:fdi:term:fleet_segment",
-	  "aliases":["Fleet Segment"],
+	  "aliases":["Fleet Segment", "WECAFC_fleet_segment_code"],
       "required": true,
       "rules": [
         {
@@ -67,7 +67,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
-	  "aliases":["Gear type"],
+	  "aliases":["Gear type", "ISSCFG_gear_type"],
       "required": true,
       "rules": [
         {
@@ -89,7 +89,7 @@
 	{
       "name": "fishing_mode",
       "urn": "urn:fdi:term:fishing_mode",
-	  "aliases":["Fishing mode"],
+	  "aliases":["Fishing mode", "WECAFC_fishing_mode"],
       "required":true,
       "rules": [
         {
@@ -111,19 +111,21 @@
     {
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
+	  "aliases": ["FAO_fishing_area_code"],
       "required": true,
       "rules": [
-	  {
-		"vrule": "raw_codelist",
-		"args": {
-			"ref_values": ["WCA"]
+		{
+		  "vrule": "raw_codelist",
+		  "args": {
+			"ref_values": ["31"]
+		  }
 		}
-	  }
 	  ]
     },
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
+	  "aliases": ["ASFIS_species_code"],
       "required": true,
       "rules": [
         {

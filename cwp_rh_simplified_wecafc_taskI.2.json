@@ -6,7 +6,7 @@
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-      "aliases":["Flagstate","Flag State","Flag"],
+      "aliases":["Flagstate","Flag State","Flag", "ISO3_flagstate_code"],
       "required": true,
       "rules": [
         {
@@ -45,12 +45,21 @@
     {
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
+	  "aliases": ["FAO_fishing_area_code"],
       "required": true,
-      "rules": []
+      "rules": [
+		{
+		  "vrule": "raw_codelist",
+		  "args": {
+			"ref_values": ["31"]
+		  }
+		}
+	  ]
     },
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
+	  "aliases": ["ASFIS_species_code"],
       "required": true,
       "rules": [
         {

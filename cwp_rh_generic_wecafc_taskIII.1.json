@@ -85,9 +85,16 @@
 	{
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
-	  "aliases":["Area"],
+	  "aliases": ["FAO fishing area"],
       "required": true,
-      "rules": []
+      "rules": [
+		{
+		  "vrule": "raw_codelist",
+		  "args": {
+			"ref_values": ["31"]
+		  }
+		}
+	  ]
     },
     {
       "name": "species",
