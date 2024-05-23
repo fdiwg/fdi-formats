@@ -61,7 +61,14 @@
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
       "required": true,
-      "rules": []
+      "rules": [
+        {
+          "vrule": "codelist",
+          "args": {
+            "ref_data_url": "https://github.com/fdiwg/fdi-codelists/raw/main/global/firms/gta/cl_nc_areas.csv"
+          }
+        }
+      ]
     },
     {
       "name": "gear_type",
