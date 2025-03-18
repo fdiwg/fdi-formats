@@ -19,8 +19,8 @@
       ]
     },
 	{
-      "name": "geographic_identifier",
-      "urn": "urn:fdi:term:geographic_identifier",
+      "name": "fishing_area",
+      "urn": "urn:fdi:term:fishing_area",
 	  "aliases": ["FAO_fishing_area_code"],										   
       "required": true,
       "rules": [
