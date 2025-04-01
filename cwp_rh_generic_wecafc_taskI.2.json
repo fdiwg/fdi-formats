@@ -63,7 +63,7 @@
 		{
           "vrule": "codelist",
           "args": {
-            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_species.csv"
+            "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-codelists/main/regional/wecafc/cl_fishing_area.csv"
           }
         }
 	  ]
