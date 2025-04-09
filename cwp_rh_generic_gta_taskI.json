@@ -133,7 +133,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["NC", "NL", "D"]
+            "ref_values": ["NC", "NL", "D", "DL", "DD"]
           }
         }
       ]
