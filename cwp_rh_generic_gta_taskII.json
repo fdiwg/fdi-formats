@@ -134,7 +134,7 @@
         {
           "vrule": "raw_codelist",
           "args": {
-            "ref_values": ["NL", "NC", "DD", "DL", "PRM"]
+            "ref_values": ["RC","NL", "NC", "DD", "DL", "PRM"]
           }
         }
       ]
