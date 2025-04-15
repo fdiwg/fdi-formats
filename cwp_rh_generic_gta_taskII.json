@@ -126,6 +126,7 @@
       "name": "measurement",
       "urn": "urn:fdi:term:measurement",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "raw_codelist",
@@ -139,6 +140,7 @@
       "name": "measurement_type",
       "urn": "urn:fdi:term:measurement_type",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "raw_codelist",
@@ -174,6 +176,7 @@
       "name": "measurement_unit",
       "urn": "urn:fdi:term:measurement_unit",
       "required": true,
+      "dimension": true,
       "rules": [
 		{
 		  "vrule": "if",
