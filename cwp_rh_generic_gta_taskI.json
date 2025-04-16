@@ -2,11 +2,13 @@
   "name": "cwp_rh_generic_gta_format",
   "urn": "urn:fdi:format:generic:gta",
   "title": "CWP TG-RH generic GTA data exchange format - nominal catch",
+  "type": "series",
   "column_specs": [
     {
       "name": "source_authority",
       "urn": "urn:fdi:term:source_authority",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "codelist",
@@ -20,6 +22,7 @@
       "name": "fishing_fleet",
       "urn": "urn:fdi:term:fishing_fleet",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "codelist",
@@ -33,6 +36,7 @@
       "name": "time_start",
       "urn": "urn:fdi:term:time_start",
       "required": true,
+      "dimension": true,
       "rules": [
 		{
 		  "vrule": "cross_column",
@@ -47,6 +51,7 @@
       "name": "time_end",
       "urn": "urn:fdi:term:time_end",
       "required": true,
+      "dimension": true,
       "rules": [
 		{
 		  "vrule": "cross_column",
@@ -61,6 +66,7 @@
       "name": "geographic_identifier",
       "urn": "urn:fdi:term:geographic_identifier",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "codelist",
@@ -74,6 +80,7 @@
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "codelist",
@@ -87,6 +94,7 @@
       "name": "species",
       "urn": "urn:fdi:term:species",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "mapping",
@@ -103,6 +111,7 @@
       "name": "fishing_mode",
       "urn": "urn:fdi:term:fishing_mode",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "codelist",
@@ -116,6 +125,7 @@
       "name": "measurement",
       "urn": "urn:fdi:term:measurement",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "raw_codelist",
@@ -129,6 +139,7 @@
       "name": "measurement_type",
       "urn": "urn:fdi:term:measurement_type",
       "required": true,
+      "dimension": true,
       "rules": [
         {
           "vrule": "raw_codelist",
@@ -164,6 +175,7 @@
       "name": "measurement_unit",
       "urn": "urn:fdi:term:measurement_unit",
       "required": true,
+      "dimension": true,
       "rules": [
 		{
 		  "vrule": "if",
