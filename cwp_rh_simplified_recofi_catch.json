@@ -6,7 +6,7 @@
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-	  "aliases": ["ISO3_flagstate_code"],
+	  "aliases": ["Flag state"],
       "required": true,
       "rules": [
         {
@@ -21,7 +21,7 @@
 	{
       "name": "fishing_area",
       "urn": "urn:fdi:term:fishing_area",
-	  "aliases": ["FAO_fishing_area_code"],										   
+	  "aliases": ["Fishing area"],
       "required": true,
       "rules": [
 		{
@@ -36,12 +36,14 @@
 	{
       "name": "landing_site",
       "urn": "urn:fdi:term:landing_site",
+	  "aliases": ["Landing site"],
       "required": false,
       "rules": []
     },
 	{
       "name": "year",
       "urn": "urn:fdi:term:year",
+	  "aliases": ["Year"],
       "required": true,
       "rules": [
 		  {
@@ -53,13 +55,14 @@
 	{
       "name": "month",
       "urn": "urn:fdi:term:month",
+	  "aliases": ["Month"],
       "required": false,
       "rules": []
     },
     {
       "name": "vessel_type",
       "urn": "urn:fdi:term:vessel_type",
-	  "aliases": ["RECOFI_fishing_vessel_type_label"],
+	  "aliases": ["Vessel type"],
       "required": true,
       "rules": [
         {
@@ -74,7 +77,7 @@
 	{
       "name": "vessel_length_class",
       "urn": "urn:fdi:term:vessel_length_class",
-	  "aliases": ["ISSCFV_LOA_class_meter"],
+	  "aliases": ["Vessel length class"],
       "required": false,
       "rules":  [{
 		  "vrule": "if",
@@ -96,7 +99,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
-	  "aliases": ["ISSCFG_gear_category"],
+	  "aliases": ["Gear type"],
       "required": true,
       "rules": [
         {
@@ -111,7 +114,7 @@
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
-	  "aliases": ["ASFIS_species_code"],
+	  "aliases": ["Species"],
       "required": true,
       "rules": [
         {
@@ -126,6 +129,7 @@
 	{
       "name": "catch_retained",
       "urn": "urn:fdi:term:catch_retained",
+	  "aliases": ["Retained catch (tonnes)"],
       "required": false,
       "rules": [
 	    {
@@ -148,6 +152,7 @@
 	{
       "name": "catch_retained_unit",
       "urn": "urn:fdi:term:catch_retained_unit",
+	  "aliases": ["Retained catch unit"],
       "required": false,
       "rules": [
 		{
@@ -169,6 +174,7 @@
 	{
       "name": "catch_discarded",
       "urn": "urn:fdi:term:catch_discarded",
+	  "aliases": ["Discards (total in tonnes)"],
       "required": false,
       "rules": [
 	    {
@@ -191,6 +197,7 @@
 	{
       "name": "catch_discarded_unit",
       "urn": "urn:fdi:term:catch_discarded_unit",
+	  "aliases": ["Discards unit"],
       "required": false,
       "rules": [
 		{
@@ -212,6 +219,7 @@
 	{
       "name": "bycatch_total",
       "urn": "urn:fdi:term:bycatch_total",
+	  "aliases": ["Total bycatch (tonnes)"],
       "required": false,
       "rules": [
 	    {
@@ -234,6 +242,7 @@
 	{
       "name": "bycatch_total_unit",
       "urn": "urn:fdi:term:bycatch_total_unit",
+	  "aliases": ["Total bycatch unit"],
       "required": false,
       "rules": [
         {
@@ -255,6 +264,7 @@
     {
       "name": "note",
       "urn": "urn:fdi:term:note",
+	  "aliases": ["Note"],
       "required": false,
       "rules": []
     }
