@@ -6,7 +6,7 @@
       {
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-      "aliases": ["Flagstate","Flag State","Flag"],
+      "aliases": ["Flag state"],
       "required": true,
       "rules": [
         {
@@ -85,7 +85,7 @@
 	{
       "name": "fishing_area",
       "urn": "urn:fdi:term:fishing_area",
-	  "aliases": ["FAO fishing area"],
+	  "aliases": ["Fishing area"],
       "required": true,
       "rules": [
 		{
@@ -184,6 +184,7 @@
     {
       "name": "measurement_obs",
       "urn": "urn:fdi:term:measurement_obs",
+	  "aliases": ["Measurement Obs", "Obs"],
       "required": false,
       "rules": []
     }

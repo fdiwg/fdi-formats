@@ -6,7 +6,7 @@
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-      "aliases":["Flagstate","Flag State","Flag", "ISO3_flagstate_code"],
+      "aliases":["Flag state"],
       "required": true,
       "rules": [
         {
@@ -20,6 +20,7 @@
 	{
       "name": "year",
       "urn": "urn:fdi:term:year",
+	  "aliases": ["Year"],
       "required": true,
       "rules": [
 	  {
@@ -31,7 +32,7 @@
     {
       "name": "period",
       "urn": "urn:fdi:term:period",
-	  "aliases":["Quarter / Month"],
+	  "aliases":["Quarter"],
       "required": true,
       "rules": [
         {
@@ -53,7 +54,7 @@
 	{
       "name": "fleet_segment",
       "urn": "urn:fdi:term:fleet_segment",
-	  "aliases":["Fleet Segment", "WECAFC_fleet_segment_code"],
+	  "aliases":["Fleet Segment"],
       "required": true,
       "rules": [
         {
@@ -67,7 +68,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
-	  "aliases":["Gear type", "ISSCFG_gear_type"],
+	  "aliases":["Gear type"],
       "required": true,
       "rules": [
         {
@@ -89,7 +90,7 @@
 	{
       "name": "fishing_mode",
       "urn": "urn:fdi:term:fishing_mode",
-	  "aliases":["Fishing mode", "WECAFC_fishing_mode"],
+	  "aliases":["Fishing mode"],
       "required":true,
       "rules": [
         {
@@ -111,7 +112,7 @@
     {
       "name": "fishing_area",
       "urn": "urn:fdi:term:fishing_area",
-	  "aliases": ["FAO_fishing_area_code"],
+	  "aliases": ["Fishing area"],
       "required": true,
       "rules": [
 		{
@@ -125,7 +126,7 @@
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
-	  "aliases": ["ASFIS_species_code"],
+	  "aliases": ["Species"],
       "required": true,
       "rules": [
         {
@@ -147,7 +148,7 @@
 	{
       "name": "catch_retained",
       "urn": "urn:fdi:term:catch_retained",
-	  "aliases":["Catch Retained","Retained Catch","Retained Catch (tons)"],
+	  "aliases":["Retained catch"],
       "required": true,
       "rules": [
 	    {

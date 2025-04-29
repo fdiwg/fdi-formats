@@ -6,7 +6,7 @@
 	{
       "name": "flagstate",
       "urn": "urn:fdi:term:flagstate",
-      "aliases":["Flagstate","Flag State","Flag","ISO3_flagstate_code"],
+      "aliases":["Flag state"],
       "required": true,
       "rules": [
         {
@@ -20,6 +20,7 @@
 	{
       "name": "year",
       "urn": "urn:fdi:term:year",
+	  "aliases": ["Year"],
       "required": true,
       "rules": [
 	  {
@@ -31,7 +32,7 @@
 	{
       "name": "fleet_segment",
       "urn": "urn:fdi:term:fleet_segment",
-	  "aliases":["Fleet Segment", "WECAFC_fleet_segment_code"],
+	  "aliases":["Fleet Segment"],
       "required": true,
       "rules": [
         {
@@ -45,7 +46,7 @@
 	{
       "name": "gear_type",
       "urn": "urn:fdi:term:gear_type",
-	  "aliases":["Gear type","ISSCFG_gear_type"],
+	  "aliases":["Gear type"],
       "required": true,
       "rules": [
         {
@@ -67,7 +68,7 @@
     {
       "name": "fishing_area",
       "urn": "urn:fdi:term:fishing_area",
-	  "aliases": ["FAO_fishing_area_code"],
+	  "aliases": ["Fishing area"],
       "required": true,
       "rules": [
 		{
@@ -81,7 +82,7 @@
     {
       "name": "species",
       "urn": "urn:fdi:term:species",
-	  "aliases": ["ASFIS_species_code"],
+	  "aliases": ["Species"],
       "required": true,
       "rules": [
         {
@@ -103,7 +104,7 @@
 	{
       "name": "engagement_type",
       "urn": "urn:fdi:term:engagement_type",
-	  "aliases": ["WECAFC_engagement_type"],
+	  "aliases": ["Engagement type"],
       "required": true,
       "rules": [
         {
@@ -117,7 +118,7 @@
 	{
       "name": "fleet_engagement_number",
       "urn": "urn:fdi:term:fleet_engagement_number",
-	  "aliases":["Number"],
+	  "aliases":["Number of active vessels"],
       "required": true,
       "rules": [
 	    {
@@ -148,7 +149,7 @@
 	{
       "name": "fleet_engagement_capacity",
       "urn": "urn:fdi:term:fleet_engagement_capacity",
-	  "aliases":["Total Capacity (GT)"],
+	  "aliases":["Total capacity (GT)"],
       "required": true,
       "rules": [
 	    {
@@ -193,7 +194,7 @@
 		{
       "name": "fleet_engagement_engine_power",
       "urn": "urn:fdi:term:fleet_engagement_engine_power",
-	  "aliases":["Total Engine Power (Kw)"],
+	  "aliases":["Total engine power (Kw)"],
       "required": true,
       "rules": [
 	    {
@@ -216,7 +217,7 @@
 	{
       "name": "fleet_engagement_engine_power_unit",
       "urn": "urn:fdi:term:fleet_engagement_engine_power_unit",
-	  "aliases":["Engine Power unit"],
+	  "aliases":["Engine power unit"],
       "required": true,
       "rules": [
 		{
@@ -238,6 +239,7 @@
     {
       "name": "fleet_engagement_obs",
       "urn": "urn:fdi:term:fleet_engagement_obs",
+	  "aliases": ["Fleet engagement obs"],
       "required": false,
       "rules": []
     }
