@@ -56,6 +56,7 @@
       "rules": [
 		{
           "vrule": "mapping",
+		  "type": "warning",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-mappings/refs/heads/main/regional-to-regional/iccat/codelist_mapping_iccat_sampling_areas_iccat_stocks.csv",
 			"ref_source_term": "trg_code",
@@ -74,6 +75,7 @@
       "rules": [
 				{
           "vrule": "mapping",
+		  "type": "warning",
           "args": {
             "ref_data_url": "https://raw.githubusercontent.com/fdiwg/fdi-mappings/refs/heads/main/regional-to-regional/iccat/codelist_mapping_iccat_sampling_areas_iccat_stocks.csv",
 			"ref_source_term": "src_code",
