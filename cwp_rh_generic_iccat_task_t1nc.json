@@ -191,6 +191,7 @@
 	{
       "name": "measurement_source",
       "urn": "urn:fdi:term:measurement_source",
+	  "aliases": ["DSourceLCd"],
       "required": true,
       "dimension": true,
       "rules": [
