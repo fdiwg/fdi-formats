@@ -187,6 +187,21 @@
 		  }
 		}
       ]
+    },
+	{
+      "name": "measurement_source",
+      "urn": "urn:fdi:term:measurement_source",
+	  "aliases": ["DSourceLCd"],
+      "required": true,
+      "dimension": true,
+      "rules": [
+        {
+          "vrule": "raw_codelist",
+          "args": {
+            "ref_values": ["L.PO", "L.CA", "L.PS", "L.FM", "L.SA", "C.LB", "OTH"]
+          }
+        }
+      ]
     }
  ]
 }
